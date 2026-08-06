@@ -20,6 +20,7 @@ Only packages pre-installed in this image and listed below will be available by 
 ### Pip packages
 via `pipdeptree`
 
+```
 altair==6.2.2
 ├── Jinja2 [required: Any, installed: 3.1.6]
 │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
@@ -16315,7 +16316,7 @@ xgboost==3.3.0
 ├── numpy [required: Any, installed: 2.5.1]
 └── scipy [required: Any, installed: 1.18.0]
     └── numpy [required: >=2.0.0,<2.8, installed: 2.5.1]
-
+```
 
 ## Installed R packages
 
