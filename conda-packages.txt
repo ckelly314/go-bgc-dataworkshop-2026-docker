@@ -39,9 +39,12 @@ html5lib
 gdown
 earthaccess
 argopy
+# jupyter related
+ipympl
 # ocean specific
 cartopy
 cmocean
+parcels
 gsw
 # r packages
 gdal
@@ -57,3 +60,5 @@ r-knitr
 r-writexl
 r-svglite
 r-pkgdown
+# bug-fix version pins
+erddapy<3.3

@@ -4,3 +4,4 @@ pipdeptree
 nbgitpuller
 jupyterlab-git
 jupyter-ai-jupyternaut
+litellm
