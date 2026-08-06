@@ -17,7 +17,6 @@ Only packages pre-installed in this image and listed below will be available by 
 
 ## Installed Python packages
 
-### Pip packages
 via `pipdeptree`
 
 ```
