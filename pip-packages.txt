@@ -1,0 +1,6 @@
+# rttl-notebooks basics
+nbclassic
+pipdeptree
+nbgitpuller
+jupyterlab-git
+jupyter-ai-jupyternaut

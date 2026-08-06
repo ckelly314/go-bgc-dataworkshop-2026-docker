@@ -1,0 +1,59 @@
+# rttl-notebooks basics
+conda-tree
+requests
+jupyter-resource-usage
+jupyter-ai
+nodejs>=20
+# core numeric packages
+numpy
+scipy
+matplotlib
+pandas
+seaborn
+xarray
+# secondary numeric packages
+imageio
+scikit-learn
+statsmodels
+joblib
+networkx
+xgboost
+# secondary geographical data packages
+folium
+geopandas
+fiona
+ipyleaflet
+# secondary visualization packages
+altair
+bokeh
+plotly
+# file formats
+hdf4
+hdf5
+h5py
+netcdf4
+h5netcdf
+openpyxl
+# web download APIs
+html5lib
+gdown
+earthaccess
+argopy
+# ocean specific
+cartopy
+cmocean
+gsw
+# r packages
+gdal
+r-base
+r-essentials
+r-ncdf4
+r-devtools
+r-tidyverse
+r-patchwork
+r-janitor
+r-rmarkdown
+r-knitr
+r-writexl
+r-svglite
+r-pkgdown

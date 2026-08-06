@@ -1,0 +1,1 @@
+vim gcc gfortran zip openssh-client gdebi-core libproj-dev proj-data proj-bin libgeos-dev libcairo2-dev build-essential texlive-xetex texlive-fonts-recommended texlive-plain-generic libfreetype6-dev libfontconfig1-dev cmake lmodern
