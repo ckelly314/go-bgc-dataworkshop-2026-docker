@@ -1,0 +1,4 @@
+{
+  "name": "Go-BGC Data Workshop 2026 Docker image",
+  "image": "quay.io/winghouw/gobgc2026:latest"
+}

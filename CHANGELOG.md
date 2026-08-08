@@ -1,15 +1,39 @@
-# OCEAN 330 RStudio notebook image
+# GO-BGC Data Workshop 2026 Docker Image Changelog
 
-All notable changes to the RStudio Jupyter Notebook image will be documented here. 
+All notable changes to the JupyterHub Docker image will be documented here. 
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.10.1] - 2026-04-03
+## [0.9.6] - 2026-08-08
 
 ### Added
 
-- Based on UW RTTL Jupyter RStudio notebook image v2.8.0
-- Updated RStutio to version 2026.01.2-418
-- Updated R to version 4.5.3
+- Now use repo2docker-action to build docker image via GitHub action
+
+### Removed
+
+- Removed the jupyter-ai-jupyternaut package from pip-packages.txt
+
+
+## [0.9.5] - 2026-08-06
+
+### Fixed
+
+- Pinned version of erddapy to <3.3 in conda-packages.txt to avoid conflicts with argopy
+
+
+## [0.9.4] - 2026-08-06
+
+### Added 
+
+- Added the parcels and ipympl to conda-packages.txt
+
+
+## [0.9.3] - 2026-08-05
+
+### Added
+
+- Based on quay.io/jupyter/r-notebook:hub-5.4.6
+- Updated RStutio to version 2026.07.1-147
 - Initial release.
