@@ -20,7 +20,7 @@ Only packages pre-installed in this image and listed below will be available by 
 via `pip list`
 
 |Package|Version|
-|-----------------------------|-----------------------------|
+|----------|----------|
 |agent-client-protocol|0.11.1|
 |aiobotocore|3.8.0|
 |aiofile|3.12.3|
@@ -28,7 +28,6 @@ via `pip list`
 |aiohttp|3.12.15|
 |aioitertools|0.13.0|
 |aiosignal|1.4.0|
-|aiosqlite|0.22.1|
 |alembic|1.18.4|
 |altair|6.2.2|
 |annotated-doc|0.0.5|
@@ -70,7 +69,7 @@ via `pip list`
 |cftime|1.6.5|
 |cgen|2025.1|
 |charset-normalizer|3.4.7|
-|click|8.4.2|
+|click|8.4.1|
 |click-plugins|1.1.1.2|
 |cligj|0.7.2|
 |cloudpickle|3.1.2|
@@ -97,7 +96,6 @@ via `pip list`
 |dask|2026.7.1|
 |debugpy|1.8.21|
 |decorator|5.3.1|
-|deepmerge|2.1.0|
 |defusedxml|0.7.1|
 |Deprecated|1.3.1|
 |distributed|2026.7.1|
@@ -114,7 +112,6 @@ via `pip list`
 |fastjsonschema|2.21.2|
 |fastmcp|3.4.6|
 |fastmcp-slim|3.4.6|
-|fastuuid|0.14.0|
 |filelock|3.29.1|
 |fiona|1.10.1|
 |folium|0.20.0|
@@ -135,13 +132,11 @@ via `pip list`
 |h2|4.3.0|
 |h5netcdf|1.8.1|
 |h5py|3.16.0|
-|hf-xet|1.6.0|
 |hpack|4.1.0|
 |html5lib|1.1|
 |httpcore|1.0.9|
 |httpx|0.28.1|
 |httpx-sse|0.4.3|
-|huggingface_hub|1.26.1|
 |hyperframe|6.1.0|
 |idna|3.17|
 |imageio|2.37.0|
@@ -164,7 +159,6 @@ via `pip list`
 |jedi|0.19.2|
 |jeepney|0.9.0|
 |Jinja2|3.1.6|
-|jiter|0.16.0|
 |jmespath|1.1.0|
 |joblib|1.5.3|
 |joserfc|1.7.4|
@@ -178,10 +172,8 @@ via `pip list`
 |jupyter_ai|3.1.2|
 |jupyter_ai_acp_client|0.2.1|
 |jupyter_ai_chat_commands|0.0.4|
-|jupyter_ai_jupyternaut|0.0.11|
-|jupyter_ai_litellm|0.0.2|
 |jupyter_ai_persona_manager|0.1.2|
-|jupyter_ai_router|0.0.6|
+|jupyter_ai_router|0.0.7|
 |jupyter_ai_tools|0.6.1|
 |jupyter_client|8.9.0|
 |jupyter-collaboration|4.0.0|
@@ -194,7 +186,7 @@ via `pip list`
 |jupyter-resource-usage|1.2.1|
 |jupyter-rsession-proxy|2.5.1|
 |jupyter_server|2.19.0|
-|jupyter_server_documents|0.3.2|
+|jupyter_server_documents|0.3.3|
 |jupyter_server_fileid|0.9.2|
 |jupyter_server_mcp|0.2.1|
 |jupyter_server_proxy|4.5.0|
@@ -214,18 +206,8 @@ via `pip list`
 |jupyterlab_widgets|3.0.16|
 |keyring|25.7.0|
 |kiwisolver|1.5.0|
-|langchain|1.3.14|
-|langchain-core|1.5.3|
-|langchain-protocol|0.0.18|
-|langgraph|1.2.10|
-|langgraph-checkpoint|4.1.1|
-|langgraph-checkpoint-sqlite|3.1.1|
-|langgraph-prebuilt|1.1.0|
-|langgraph-sdk|0.4.2|
-|langsmith|0.10.16|
 |lark|1.3.1|
 |libmambapy|2.8.0|
-|litellm|1.82.6|
 |locket|1.0.0|
 |lz4|4.4.5|
 |Mako|1.3.12|
@@ -261,12 +243,9 @@ via `pip list`
 |numcodecs|0.15.1|
 |numpy|2.5.1|
 |oauthlib|3.3.1|
-|openai|2.53.0|
 |openapi-pydantic|0.5.1|
 |openpyxl|3.1.5|
 |opentelemetry-api|1.44.0|
-|orjson|3.11.9|
-|ormsgpack|1.12.2|
 |overrides|7.7.0|
 |packaging|26.2|
 |pamela|1.2.0|
@@ -301,7 +280,7 @@ via `pip list`
 |pycrdt-websocket|0.16.4|
 |pydantic|2.13.4|
 |pydantic_core|2.46.4|
-|pydantic-settings|2.14.2|
+|pydantic-settings|2.15.0|
 |Pygments|2.20.0|
 |PyJWT|2.13.0|
 |pymbolic|2025.1|
@@ -323,9 +302,7 @@ via `pip list`
 |PyYAML|6.0.3|
 |pyzmq|27.1.0|
 |referencing|0.37.0|
-|regex|2026.7.19|
 |requests|2.34.2|
-|requests-toolbelt|1.0.0|
 |rfc3339_validator|0.1.4|
 |rfc3986-validator|0.1.1|
 |rfc3987-syntax|1.1.0|
@@ -354,19 +331,16 @@ via `pip list`
 |soupsieve|2.8.4|
 |SQLAlchemy|2.0.50|
 |sqlite-anyio|0.2.10|
-|sqlite-vec|0.1.9|
 |sse-starlette|3.4.8|
 |stack_data|0.6.3|
-|starlette|1.4.0|
+|starlette|1.4.1|
 |statsmodels|0.14.6|
 |tblib|3.2.2|
 |tenacity|9.1.4|
 |terminado|0.18.1|
 |threadpoolctl|3.6.0|
-|tiktoken|0.13.0|
 |tinycss2|1.4.0|
 |tinynetrc|1.3.1|
-|tokenizers|0.23.1|
 |tomli|2.4.1|
 |tomli_w|1.2.0|
 |toolz|1.1.0|
@@ -385,19 +359,17 @@ via `pip list`
 |unearth|0.18.2|
 |uri-template|1.3.0|
 |urllib3|2.7.0|
-|uuid_utils|0.17.0|
 |uvicorn|0.52.1|
 |watchfiles|1.2.0|
 |wcwidth|0.8.0|
 |webcolors|25.10.0|
 |webencodings|0.5.1|
 |websocket-client|1.9.0|
-|websockets|15.0.1|
+|websockets|17.0.1|
 |widgetsnbextension|4.0.15|
 |wrapt|2.3.0|
 |xarray|2025.9.0|
 |xgboost|3.3.0|
-|xxhash|3.8.1|
 |xyzservices|2026.3.0|
 |yarl|1.24.5|
 |zarr|2.18.7|
@@ -445,7 +417,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |credentials|2.0.3|
 |crul|1.6.0|
 |curl|7.1.0|
-|data.table|1.17.8|
+data.table|data.table|1.17.8|
 |datasets|4.5.3|
 |DBI|1.3.0|
 |dbplyr|2.5.2|
@@ -476,7 +448,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |fs|2.1.0|
 |furrr|0.4.0|
 |future|1.70.0|
-|future.apply|1.20.2|
+future.apply|future.apply|1.20.2|
 |gargle|1.6.1|
 |generics|0.1.4|
 |gert|2.3.1|
@@ -669,7 +641,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |withr|3.0.2|
 |workflows|1.3.0|
 |workflowsets|1.1.1|
-|writexl|1.5.4|
+|writexl|2.0.0|
 |xfun|0.57|
 |xml2|1.5.2|
 |xopen|1.0.1|
