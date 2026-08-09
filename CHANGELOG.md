@@ -2,7 +2,7 @@
 
 All notable changes to the JupyterHub Docker image will be documented here. 
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [0.9.6] - 2026-08-08
@@ -14,6 +14,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 
 - Removed the jupyter-ai-jupyternaut package from pip-packages.txt
+
+### Fixed
+
+- Fixed the content of CHANGELOG.md
+- Fixed the content of VERSION
 
 
 ## [0.9.5] - 2026-08-06
