@@ -73,6 +73,10 @@ RUN pip install -r pip-packages.txt \
   && jupyter server extension enable nbgitpuller jupyter_git jupyterlab-a11y-checker --sys-prefix \
   && pip cache purge
 
+# Install npm packages  
+COPY --chown=$NB_UID:$NB_GID npm-packages.txt /home/jovyan/
+RUN xargs -a npm-packages.txt -r npm install -g
+  
 # Install R packages
 COPY --chown=$NB_UID:$NB_GID install.R /home/jovyan/
 ## Run an install.R script, if it exists.

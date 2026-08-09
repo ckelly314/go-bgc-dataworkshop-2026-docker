@@ -5,6 +5,17 @@ All notable changes to the JupyterHub Docker image will be documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.7] - 2026-08-09
+
+### Added
+
+- Added litellm to conda-packages.txt
+- Added npm-packages.txt to install npm pacakges for copilot and claude agents for jupyter-ai
+
+### Changed
+
+- Upgrade node version pin to >=22
+
 ## [0.9.6] - 2026-08-08
 
 ### Added

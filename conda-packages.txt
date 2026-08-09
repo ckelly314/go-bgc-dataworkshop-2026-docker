@@ -3,7 +3,8 @@ conda-tree
 requests
 jupyter-resource-usage
 jupyter-ai
-nodejs>=20
+litellm
+nodejs>=22
 # core numeric packages
 numpy
 scipy

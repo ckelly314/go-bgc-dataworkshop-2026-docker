@@ -89,7 +89,7 @@ via `pip list`
 |conda-tree|1.2.0|
 |constantdict|2025.3|
 |contourpy|1.3.3|
-|cryptography|48.0.0|
+|cryptography|48.0.1|
 |cycler|0.12.1|
 |cyclopts|4.22.5|
 |cytoolz|1.1.0|
@@ -112,6 +112,7 @@ via `pip list`
 |fastjsonschema|2.21.2|
 |fastmcp|3.4.6|
 |fastmcp-slim|3.4.6|
+|fastuuid|0.14.0|
 |filelock|3.29.1|
 |fiona|1.10.1|
 |folium|0.20.0|
@@ -132,16 +133,18 @@ via `pip list`
 |h2|4.3.0|
 |h5netcdf|1.8.1|
 |h5py|3.16.0|
+|hf-xet|1.5.2|
 |hpack|4.1.0|
 |html5lib|1.1|
 |httpcore|1.0.9|
 |httpx|0.28.1|
 |httpx-sse|0.4.3|
+|huggingface_hub|1.16.1|
 |hyperframe|6.1.0|
 |idna|3.17|
 |imageio|2.37.0|
 |immutabledict|4.3.1|
-|importlib_metadata|8.7.1|
+|importlib_metadata|8.5.0|
 |importlib_resources|7.1.0|
 |iniconfig|2.3.0|
 |installer|1.0.1|
@@ -159,6 +162,7 @@ via `pip list`
 |jedi|0.19.2|
 |jeepney|0.9.0|
 |Jinja2|3.1.6|
+|jiter|0.15.0|
 |jmespath|1.1.0|
 |joblib|1.5.3|
 |joserfc|1.7.4|
@@ -208,6 +212,7 @@ via `pip list`
 |kiwisolver|1.5.0|
 |lark|1.3.1|
 |libmambapy|2.8.0|
+|litellm|1.95.0|
 |locket|1.0.0|
 |lz4|4.4.5|
 |Mako|1.3.12|
@@ -243,9 +248,10 @@ via `pip list`
 |numcodecs|0.15.1|
 |numpy|2.5.1|
 |oauthlib|3.3.1|
+|openai|2.53.0|
 |openapi-pydantic|0.5.1|
 |openpyxl|3.1.5|
-|opentelemetry-api|1.44.0|
+|opentelemetry-api|1.28.0|
 |overrides|7.7.0|
 |packaging|26.2|
 |pamela|1.2.0|
@@ -302,11 +308,12 @@ via `pip list`
 |PyYAML|6.0.3|
 |pyzmq|27.1.0|
 |referencing|0.37.0|
+|regex|2026.7.19|
 |requests|2.34.2|
 |rfc3339_validator|0.1.4|
 |rfc3986-validator|0.1.1|
 |rfc3987-syntax|1.1.0|
-|rich|15.0.0|
+|rich|13.9.4|
 |rich-rst|2.1.0|
 |roaring-landmask|0.10.1|
 |rpds-py|2026.5.1|
@@ -339,8 +346,10 @@ via `pip list`
 |tenacity|9.1.4|
 |terminado|0.18.1|
 |threadpoolctl|3.6.0|
+|tiktoken|0.13.0|
 |tinycss2|1.4.0|
 |tinynetrc|1.3.1|
+|tokenizers|0.23.1|
 |tomli|2.4.1|
 |tomli_w|1.2.0|
 |toolz|1.1.0|
@@ -365,7 +374,7 @@ via `pip list`
 |webcolors|25.10.0|
 |webencodings|0.5.1|
 |websocket-client|1.9.0|
-|websockets|17.0.1|
+|websockets|15.0.1|
 |widgetsnbextension|4.0.15|
 |wrapt|2.3.0|
 |xarray|2025.9.0|
@@ -382,7 +391,7 @@ via `pip list`
 Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 
 |Package|Version|
-| ----------------------------- | ------------------- |
+|----------|----------|
 |askpass|1.2.1|
 |assertthat|0.2.1|
 |backports|1.5.1|
