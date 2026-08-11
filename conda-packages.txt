@@ -38,6 +38,7 @@ openpyxl
 # web download APIs
 html5lib
 gdown
+boto3
 earthaccess
 argopy
 # jupyter related
@@ -61,5 +62,7 @@ r-knitr
 r-writexl
 r-svglite
 r-pkgdown
+r-paws
+r-aws.s3
 # bug-fix version pins
 erddapy<3.3

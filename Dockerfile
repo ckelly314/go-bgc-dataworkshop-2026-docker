@@ -48,6 +48,11 @@ COPY --chmod=755 safe_gitpuller.sh /usr/local/bin/safe_gitpuller
 
 USER $NB_USER
 
+# install Amazon cli
+RUN curl -fsSL https://awscli.amazonaws.com/v2/install.sh | bash
+
+ENV PATH="/home/$NB_USER/.local/bin:${PATH}"
+
 RUN echo "PROJ_LIB=/opt/conda/share/proj" >> /opt/conda/lib/R/etc/Renviron.site
 
 # Install Conda packages
