@@ -46,6 +46,12 @@ RUN mkdir -p /var/run/rstudio-server /var/lib/rstudio-server \
 # Add wrapper for gitpuller
 COPY --chmod=755 safe_gitpuller.sh /usr/local/bin/safe_gitpuller
 
+# make Amazon cli available
+ENV PATH="/home/$NB_USER/.local/bin:${PATH}"
+
+# set the python used by reticulate
+ENV RETICULATE_PYTHON="/opt/conda/bin/python"
+
 # Copy environment variable injection script to image (not mounted volume)
 COPY --chmod=755 inject-env.py /usr/local/bin/inject-env.py
 
@@ -94,8 +100,3 @@ COPY --chown=$NB_UID:$NB_GID install.R /home/jovyan/
 ## Run an install.R script, if it exists.
 RUN if [ -f install.R ]; then R --quiet -f install.R; fi
 
-# make Amazon cli available
-ENV PATH="/home/$NB_USER/.local/bin:${PATH}"
-
-# set the python used by reticulate
-ENV RETICULATE_PYTHON="/opt/conda/bin/python"
