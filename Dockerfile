@@ -15,7 +15,7 @@ COPY --chown=$NB_UID: apt.txt /home/jovyan/
 # Per: https://posit.co/download/rstudio-server/
 RUN apt-get update --fix-missing > /dev/null && \
     apt-get upgrade --yes && \
-    xargs -a apt.txt apt-get install --yes && \    
+    xargs -a apt.txt apt-get install --yes && \
     curl --silent -L --fail wget https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2026.07.1-147-amd64.deb > /tmp/rstudio.deb && \
     gdebi -n /tmp/rstudio.deb && \
     rm /tmp/rstudio.deb && \
@@ -46,12 +46,19 @@ RUN mkdir -p /var/run/rstudio-server /var/lib/rstudio-server \
 # Add wrapper for gitpuller
 COPY --chmod=755 safe_gitpuller.sh /usr/local/bin/safe_gitpuller
 
+# Copy environment variable injection script to image (not mounted volume)
+COPY --chmod=755 inject-env.py /usr/local/bin/inject-env.py
+
+# Create a Jupyter startup script in a system location (not shadowed by user volume mount)
+RUN mkdir -p /usr/local/etc/jupyter/startup && \
+    echo '#!/usr/bin/env python3' > /usr/local/etc/jupyter/startup/00-inject-env.py && \
+    cat /usr/local/bin/inject-env.py | tail -n +2 >> /usr/local/etc/jupyter/startup/00-inject-env.py && \
+    chmod +x /usr/local/etc/jupyter/startup/00-inject-env.py
+
 USER $NB_USER
 
 # install Amazon cli
 RUN curl -fsSL https://awscli.amazonaws.com/v2/install.sh | bash
-
-ENV PATH="/home/$NB_USER/.local/bin:${PATH}"
 
 RUN echo "PROJ_LIB=/opt/conda/share/proj" >> /opt/conda/lib/R/etc/Renviron.site
 
@@ -78,11 +85,17 @@ RUN pip install -r pip-packages.txt \
   && jupyter server extension enable nbgitpuller jupyter_git jupyterlab-a11y-checker --sys-prefix \
   && pip cache purge
 
-# Install npm packages  
+# Install npm packages
 COPY --chown=$NB_UID:$NB_GID npm-packages.txt /home/jovyan/
 RUN xargs -a npm-packages.txt -r npm install -g
-  
+
 # Install R packages
 COPY --chown=$NB_UID:$NB_GID install.R /home/jovyan/
 ## Run an install.R script, if it exists.
 RUN if [ -f install.R ]; then R --quiet -f install.R; fi
+
+# make Amazon cli available
+ENV PATH="/home/$NB_USER/.local/bin:${PATH}"
+
+# set the python used by reticulate
+ENV RETICULATE_PYTHON="/opt/conda/bin/python"

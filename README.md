@@ -318,6 +318,9 @@ via `pip list`
 |rich-rst|2.1.0|
 |roaring-landmask|0.11.0|
 |rpds-py|2026.5.1|
+|rpy2|3.6.7|
+|rpy2-rinterface|3.6.6|
+|rpy2-robjects|3.6.5|
 |ruamel.yaml|0.18.17|
 |ruamel.yaml.clib|0.2.15|
 |s3fs|2026.6.0|
@@ -366,6 +369,7 @@ via `pip list`
 |typing-inspection|0.4.2|
 |typing_utils|0.1.0|
 |tzdata|2026.2|
+|tzlocal|5.4.4|
 |uncalled-for|0.4.0|
 |unearth|0.18.2|
 |uri-template|1.3.0|
@@ -482,6 +486,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |gtable|0.3.6|
 |hardhat|1.4.3|
 |haven|2.5.5|
+|here|1.0.2|
 |hexbin|1.28.5|
 |highr|0.12|
 |hms|1.1.4|
@@ -566,6 +571,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |pkgload|1.5.2|
 |plogr|0.2.0|
 |plyr|1.8.9|
+|png|0.1-9|
 |praise|1.0.0|
 |prettycode|1.1.0|
 |prettyunits|1.2.0|
@@ -592,6 +598,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |Rcpp|1.1.1-1.1|
 |RcppArmadillo|15.2.7-1|
 |RcppEigen|0.3.4.0.2|
+|RcppTOML|0.2.3|
 |RCurl|1.98-1.19|
 |readr|2.2.0|
 |readxl|1.5.0|
@@ -601,6 +608,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |repr|1.1.7|
 |reprex|2.1.1|
 |reshape2|1.4.5|
+|reticulate|1.46.0|
 |rlang|1.2.0|
 |rmarkdown|2.31|
 |RODBC|1.3-26.1|

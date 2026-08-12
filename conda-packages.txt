@@ -48,6 +48,8 @@ cartopy
 cmocean
 parcels
 gsw
+#python to r bridge
+rpy2
 # r packages
 gdal
 r-base
@@ -62,6 +64,7 @@ r-knitr
 r-writexl
 r-svglite
 r-pkgdown
+r-reticulate
 r-paws
 r-aws.s3
 # bug-fix version pins
