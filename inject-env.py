@@ -3,7 +3,8 @@ import os
 renviron_path = os.path.expanduser('~/.Renviron')
 
 # Capture specific environment variables from the container
-vars_to_capture = ['PATH', 'RETICULATE_PYTHON'] + [k for k in os.environ.keys() if k.startswith('AWS_')]
+vars_to_capture = ['PATH', 'RETICULATE_PYTHON', 'SCRATCH_BUCKET'] 
+vars_to_capture += [k for k in os.environ.keys() if k.startswith('AWS_')]
 
 with open(renviron_path, 'a') as f:
     f.write('\n# Environment variables from container\n')
