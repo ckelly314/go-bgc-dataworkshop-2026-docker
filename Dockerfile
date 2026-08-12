@@ -57,9 +57,9 @@ COPY --chmod=755 inject-env.py /usr/local/bin/inject-env.py
 
 # Create a Jupyter startup script in a system location (not shadowed by user volume mount)
 RUN mkdir -p /usr/local/etc/jupyter/startup && \
-    echo '#!/usr/bin/env python3' > /usr/local/etc/jupyter/startup/00-inject-env.py && \
-    cat /usr/local/bin/inject-env.py | tail -n +2 >> /usr/local/etc/jupyter/startup/00-inject-env.py && \
-    chmod +x /usr/local/etc/jupyter/startup/00-inject-env.py
+    echo '#!/usr/bin/env python3' > /usr/local/etc/jupyter/startup/99-inject-env.py && \
+    cat /usr/local/bin/inject-env.py | tail -n +2 >> /usr/local/etc/jupyter/startup/99-inject-env.py && \
+    chmod +x /usr/local/etc/jupyter/startup/99-inject-env.py
 
 USER $NB_USER
 
