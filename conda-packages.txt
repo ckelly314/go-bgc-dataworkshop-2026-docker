@@ -35,6 +35,8 @@ h5py
 netcdf4
 h5netcdf
 openpyxl
+fsspec
+s3fs
 # web download APIs
 html5lib
 gdown
