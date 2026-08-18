@@ -50,6 +50,14 @@ cartopy
 cmocean
 parcels
 gsw
+# group 8 specific
+dask
+bottleneck
+pyarrow
+lightgbm
+tqdm
+pytest
+awscli
 #python to r bridge
 rpy2
 # r packages
