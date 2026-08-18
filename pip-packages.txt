@@ -3,3 +3,4 @@ nbclassic
 pipdeptree
 nbgitpuller
 jupyterlab-git
+cdsapi>=0.7.7
