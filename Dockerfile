@@ -64,6 +64,9 @@ RUN mkdir -p /usr/local/etc/jupyter/startup && \
 # install Amazon cli
 RUN curl -fsSL https://awscli.amazonaws.com/v2/install.sh | sudo bash -s -- --system
 
+# group 8 - set data and model directories
+ENV N2O_DATA_DIR=/tmp/gobgc-group8/data
+ENV N2O_MODEL_DIR=/tmp/gobgc-group8/models
 
 USER $NB_USER
 
