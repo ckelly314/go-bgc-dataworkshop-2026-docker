@@ -61,10 +61,11 @@ RUN mkdir -p /usr/local/etc/jupyter/startup && \
     cat /usr/local/bin/inject-env.py | tail -n +2 >> /usr/local/etc/jupyter/startup/99-inject-env.py && \
     chmod +x /usr/local/etc/jupyter/startup/99-inject-env.py
 
-USER $NB_USER
-
 # install Amazon cli
-RUN curl -fsSL https://awscli.amazonaws.com/v2/install.sh | bash
+RUN curl -fsSL https://awscli.amazonaws.com/v2/install.sh | sudo bash -s -- --system
+
+
+USER $NB_USER
 
 RUN echo "PROJ_LIB=/opt/conda/share/proj" >> /opt/conda/lib/R/etc/Renviron.site
 
